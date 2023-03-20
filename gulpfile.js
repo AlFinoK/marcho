@@ -19,7 +19,6 @@ const styles = () => {
     .pipe(
       autoprefixer({
         overrideBrowserslist: ['last 10 versions'],
-        // grid: true,
       })
     )
     .pipe(browserSync.stream())

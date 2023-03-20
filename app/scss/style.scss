@@ -4,3 +4,83 @@
 @import 'libs';
 @import 'reset';
 @import 'media';
+
+.header {
+  padding: 40px 0;
+  &__inner {
+  }
+  &__icon {
+    margin-right: 25px;
+    position: relative;
+  }
+  &__icon-number {
+    position: absolute;
+    left: 13px;
+    bottom: 10px;
+    border-radius: 50%;
+    font-size: rem(12);
+    color: white;
+    width: 20px;
+    height: 20px;
+    background-color: #fe3e57;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__list {
+    display: flex;
+  }
+  &__list-item {
+    margin-right: 35px;
+  }
+  &__list-link {
+    cursor: pointer;
+    padding: 0px 2px 2px;
+    color: $title;
+    transition: all 0.3s;
+    @extend %roboto-500;
+    &:hover {
+      color: $hover;
+      border-bottom: 1px solid $hover;
+    }
+  }
+  &__list-link--active {
+    transition: all 0.3s;
+    color: $hover;
+    border-bottom: 1px solid $hover;
+  }
+}
+
+.top {
+  background-image: url('../images/top-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  &__inner {
+  }
+  &__title {
+    font-size: rem(58);
+    @extend %roboto-700;
+    line-height: 68px;
+    color: $title;
+    margin-bottom: 50px;
+  }
+  &__text {
+    max-width: 450px;
+    margin-bottom: 60px;
+  }
+  &__btn {
+    box-shadow: 0 10px 25px rgba(254, 62, 87, 0.3);
+    cursor: pointer;
+    color: white;
+    @extend %roboto-400;
+    letter-spacing: 3.2px;
+    padding: 20px 35px;
+    background-color: $hover;
+  }
+}

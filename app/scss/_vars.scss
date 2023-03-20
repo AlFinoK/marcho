@@ -1,4 +1,33 @@
-%NAME {
-  font-family: 'NAME', sans-serif;
+$hover: #fe3e57;
+$title: #29282d;
+$def: #8d8d8d;
+
+%roboto-400 {
+  font-family: 'Roboto-Regular', sans-serif;
   font-weight: 400;
+}
+
+%roboto-500 {
+  font-family: 'Roboto-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%roboto-700 {
+  font-family: 'Roboto-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%quick-400 {
+  font-family: 'Quicksand-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%quick-500 {
+  font-family: 'Quicksand-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%quick-700 {
+  font-family: 'Quicksand-Bold', sans-serif;
+  font-weight: 700;
 }
