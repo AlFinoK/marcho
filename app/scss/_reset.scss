@@ -10,6 +10,11 @@
   box-sizing: border-box;
 }
 
+a,
+button {
+  cursor: pointer;  
+}
+
 ol,
 ul {
   list-style: none;

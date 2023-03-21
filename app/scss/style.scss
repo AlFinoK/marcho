@@ -84,3 +84,108 @@
     background-color: $hover;
   }
 }
+
+.footer {
+  background-color: #f6f6f6;
+  @extend %quick-500;
+  &__logo {
+    margin-bottom: 35px;
+  }
+}
+
+.footer-top {
+  padding-top: 75px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  &__box-contacts {
+    max-width: 240px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__address {
+    margin-bottom: 20px;
+  }
+  &__mail {
+    margin-bottom: 20px;
+  }
+  &__tel {
+    margin-bottom: 20px;
+  }
+  &__social {
+    display: flex;
+  }
+  &__social-item {
+    margin-right: 19px;
+    & svg:hover {
+      fill: $hover;
+      transition: all 0.3s;
+    }
+  }
+  &__social-link {
+  }
+  &__box-links {
+    max-width: 145px;
+  }
+  &__title,
+  &__form-title {
+    color: $title;
+    @extend %roboto-500;
+    font-size: rem(22);
+    line-height: 36px;
+    margin-bottom: 35px;
+  }
+  &__item {
+    margin-bottom: 20px;
+  }
+  &__box-account {
+    max-width: 120px;
+  }
+  &__form {
+    max-width: 470px;
+  }
+  &__form-title {
+  }
+  &__form-text {
+    margin-bottom: 30px;
+  }
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  &__input {
+    width: 320px;
+    padding: 15px 60px 15px 17px;
+    background-color: #fff;
+    letter-spacing: 0.8px;
+    box-shadow: 0 7px 20px rgba(192, 192, 192, 0.3);
+    &::placeholder {
+      color: #c7c7c7;
+    }
+  }
+  &__btn {
+    box-shadow: 0 7px 20px rgba(255, 17, 48, 0.3);
+    background-color: #fe3e57;
+    padding: 15px 25px;
+    color: #ffffff;
+    @extend %roboto-400;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+  }
+}
+.footer-bottom {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ececec;
+  &__pay {
+    display: flex;
+  }
+  &__pay-text {
+    margin-right: 25px;
+  }
+  &__pay-img {
+    margin-right: 20px;
+  }
+}
