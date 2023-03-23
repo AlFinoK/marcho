@@ -12,7 +12,7 @@
 
 a,
 button {
-  cursor: pointer;  
+  cursor: pointer;
 }
 
 ol,
@@ -29,8 +29,8 @@ img {
   @return $result;
 }
 
-$maxWidth: 1920px;
-$maxWidthContainer: 1170px;
+$maxWidth: 1920;
+$maxWidthContainer: 1200;
 
 @mixin adaptive-value($property, $startSize, $minSize, $type) {
   $addSize: $startSize - $minSize;

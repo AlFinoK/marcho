@@ -31,3 +31,13 @@ $def: #8d8d8d;
   font-family: 'Quicksand-Bold', sans-serif;
   font-weight: 700;
 }
+
+%btn {
+  letter-spacing: 3.2px;
+  color: white;
+  text-transform: uppercase;
+  @extend %roboto-400;
+  padding: 15px 25px;
+  background-color: $hover;
+  box-shadow: 0 10px 25px rgba(254, 62, 87, 0.3);
+}
