@@ -9,6 +9,9 @@ body {
   @extend %quick-500;
   line-height: 26px;
   color: $def;
+  & .lock {
+    overflow: hidden;
+  }
 }
 
 main {
@@ -19,4 +22,10 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0px 15px;
+}
+
+.title {
+  color: $title;
+  @extend %roboto-700;
+  text-align: center;
 }

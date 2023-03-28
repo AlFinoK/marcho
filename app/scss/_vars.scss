@@ -1,7 +1,7 @@
 $hover: #fe3e57;
 $title: #29282d;
 $def: #8d8d8d;
-
+$bg: #f6f6f6;
 %roboto-400 {
   font-family: 'Roboto-Regular', sans-serif;
   font-weight: 400;
@@ -38,6 +38,7 @@ $def: #8d8d8d;
   text-transform: uppercase;
   @extend %roboto-400;
   padding: 15px 25px;
+  text-align: center;
   background-color: $hover;
   box-shadow: 0 10px 25px rgba(254, 62, 87, 0.3);
 }
