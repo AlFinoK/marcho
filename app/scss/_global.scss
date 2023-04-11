@@ -24,8 +24,15 @@ main {
   padding: 0px 15px;
 }
 
+.container-big {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 140px 15px;
+}
+
 .title {
   color: $title;
   @extend %roboto-700;
   text-align: center;
+  text-transform: uppercase;
 }

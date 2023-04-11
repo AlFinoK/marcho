@@ -10,7 +10,7 @@
     <title>marcho</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header header-404page">
       <div class="container">
         <nav class="menu">
           <a class="logo" href="#">
@@ -103,23 +103,26 @@
       </div>
     </header>
     <main class="main">
-      <section class="top">
-        <div class="container-big">
-          <h2 class="top__title">Blog</h2>
-          <div class="breadcrumbs">
-            <ul class="breadcrumbs__list">
-              <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="#">Home</a>
-              </li>
-              <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="#">Blog</a>
-              </li>
-            </ul>
+      <section class="error">
+        <div class="container">
+          <div class="error__inner">
+            <div class="error__content">
+              <h2 class="error__title">OPPS! Page Not Found!!</h2>
+              <p class="error__text">
+                We,re sorry but we can’t seem to find the pages you request.
+                This might be because you have typed the web address not find
+                incorrectly.
+              </p>
+              <a class="error__link" href="http://localhost:3000/home.html#"
+                >BACK TO HOME</a
+              >
+            </div>
+            <img src="images/error-404.png" alt="404 error" />
           </div>
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer-top">
           <div class="footer-top__box footer-top__box-contacts">
@@ -286,7 +289,7 @@
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <script src="js/main.min.js"></script>
   </body>
 </html>
