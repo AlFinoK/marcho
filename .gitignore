@@ -7,5 +7,5 @@ npm-debug.*
 
 
 .temporary_cache
-node_modules
+node_modules   
 package-lock.json
