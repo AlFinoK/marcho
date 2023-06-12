@@ -1,0 +1,54 @@
+@use 'sass:math';
+@import '../config/vars';
+
+
+
+.header {
+  padding: 40px 0;
+  &__icon {
+    margin-right: 25px;
+    position: relative;
+  }
+  &__icon-number {
+    position: absolute;
+    left: 13px;
+    bottom: 10px;
+    border-radius: 50%;
+    font-size: 12px;
+    color: white;
+    width: 20px;
+    height: 20px;
+    background-color: #fe3e57;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__list {
+    display: flex;
+  }
+  &__list-item {
+    margin-right: 35px;
+  }
+  &__list-link {
+    cursor: pointer;
+    padding: 0px 2px 2px;
+    color: $title;
+    transition: all 0.3s;
+    @extend %roboto-500;
+    &:hover {
+      color: $hover;
+      border-bottom: 1px solid $hover;
+    }
+  }
+  &__list-link--active {
+    transition: all 0.3s;
+    color: $hover;
+    border-bottom: 1px solid $hover;
+  }
+}
+
