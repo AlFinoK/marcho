@@ -443,22 +443,531 @@
             </div>
           </div>
           <div class="goods-tabs">
-            <div class="goods-tabs__top">
-              <a class="goods-tabs__top-item" href="#tab-1"> Description </a>
-              <a class="goods-tabs__top-item" href="#tab-2">
+            <div class="goods-tabs__nav">
+              <button class="goods-tabs__nav-btn" data-product-tab="#tab-1">
+                Description
+              </button>
+              <button class="goods-tabs__nav-btn" data-product-tab="#tab-2">
                 Additional information
-              </a>
-              <a class="goods-tabs__top-item" href="#tab-3"> Reviews </a>
+              </button>
+              <button class="goods-tabs__nav-btn" data-product-tab="#tab-3">
+                Reviews
+              </button>
             </div>
             <div class="goods-tabs__content">
-              <div class="goods-tabs__content-item" id="tab-1">
-                some content
+              <div class="goods-tabs__description goods-tabs__item" id="tab-1">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Voluptas eos error esse itaque dolor. Quod corporis unde
+                  cupiditate sapiente eveniet eos maiores recusandae, veritatis
+                  eligendi? Voluptatem voluptas iusto deserunt quas! Commodi,
+                  cupiditate fugiat reiciendis incidunt eveniet facere explicabo
+                  cum numquam aliquam, consequatur dicta. Harum minima culpa
+                  voluptatum quae molestiae possimus iure quod aperiam dolorem
+                  fuga, voluptate sequi sint? Ea, neque? Sapiente sequi vel
+                  nulla enim magni, eveniet id omnis. Enim aut totam possimus
+                  dolor ullam corporis dolorem doloribus laudantium eius a ea
+                  vitae, nesciunt omnis nulla eaque iusto eligendi. Vitae.
+                  Obcaecati accusamus repellendus dolorem modi tenetur nam
+                  laudantium possimus quaerat in sunt, quam explicabo sint
+                  asperiores sequi, veniam dignissimos incidunt optio voluptas
+                  nihil id tempora vitae labore numquam sed. Explicabo? Itaque
+                  iusto dicta provident saepe quasi at soluta blanditiis
+                  repellat! Quam aspernatur minus eum. Aliquid quibusdam ipsum
+                  doloribus minus repellendus, ducimus ea dolor hic temporibus,
+                  repellat sit exercitationem? Perspiciatis, doloremque?
+                </p>
               </div>
-              <div class="goods-tabs__content-item" id="tab-1">
-                some content
+              <div class="goods-tabs__information goods-tabs__item" id="tab-2">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Voluptas eos error esse itaque dolor. Quod corporis unde
+                  cupiditate sapiente eveniet eos maiores recusandae, veritatis
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Voluptas eos error esse itaque dolor. Quod corporis unde
+                  cupiditate sapiente eveniet eos maiores recusandae, veritatis
+                  eligendi? Voluptatem voluptas iusto deserunt quas! Commodi,
+                  cupiditate fugiat reiciendis incidunt eveniet facere explicabo
+                  cum numquam aliquam, consequatur dicta. Harum minima culpa
+                  voluptatum quae molestiae possimus iure quod aperiam dolorem
+                  fuga, voluptate sequi sint? Ea, neque? Sapiente sequi vel
+                  nulla enim magni, eveniet id omnis. Enim aut totam possimus
+                  dolor ullam corporis dolorem doloribus laudantium eius a ea
+                  vitae, nesciunt omnis nulla eaque iusto eligendi. Vitae.
+                  Obcaecati accusamus repellendus dolorem modi tenetur nam
+                  laudantium possimus quaerat in sunt, quam explicabo sint
+                  asperiores sequi, veniam dignissimos incidunt optio voluptas
+                  nihil id tempora vitae labore numquam sed. Explicabo? Itaque
+                  iusto dicta provident saepe quasi at soluta blanditiis
+                  repellat! Quam aspernatur minus eum. Aliquid quibusdam ipsum
+                  doloribus minus repellendus, ducimus ea dolor hic temporibus,
+                  repellat sit exercitationem? Perspiciatis, doloremque?
+                </p>
               </div>
-              <div class="goods-tabs__content-item" id="tab-1">
-                some content
+              <div class="goods-tabs__reviews goods-tabs__item" id="tab-3">
+                <div class="goods-tabs__comment-wrapper">
+                  <div class="goods-tabs__comment-img">
+                    <img src="images/goods/authors/author-1.png" alt="" />
+                  </div>
+                  <div class="goods-tabs__comment-box">
+                    <div class="goods-tabs__comment-info">
+                      <div class="goods-tabs__comment-author">
+                        <a class="goods-tabs__comment-name" href="#"
+                          >Aurora Collins
+                        </a>
+                        <span class="goods-tabs__comment-date">1 day ago</span>
+                      </div>
+                      <div class="goods-tabs__comment-rating rating-box">
+                        <div class="rating rating--set">
+                          <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                              <input
+                                class="rating__item"
+                                type="radio"
+                                value="1"
+                                name="rating" />
+                              <input
+                                class="rating__item"
+                                type="radio"
+                                value="2"
+                                name="rating" />
+                              <input
+                                class="rating__item"
+                                type="radio"
+                                value="3"
+                                name="rating" />
+                              <input
+                                class="rating__item"
+                                type="radio"
+                                value="4"
+                                name="rating" />
+                              <input
+                                class="rating__item"
+                                type="radio"
+                                value="5"
+                                name="rating" />
+                            </div>
+                          </div>
+                          <div class="rating__value">3.7</div>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="goods-tabs__comment-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Qus ipsum speissei ultrices gravida. Risus commodo
+                      viverra maeenas accumsan lacus vel facilisis.
+                    </p>
+                    <a class="goods-tabs__comment-reply" href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="15"
+                        height="14"
+                        viewBox="0 0 15 14">
+                        <path
+                          fill="#8d8d8d"
+                          d="M5.835 3.67V.202L0 6.269l5.834 6.067V8.782c4.167 0 7.084 1.387 9.167 4.42-.833-4.333-3.334-8.666-9.167-9.533z" />
+                      </svg>
+                      <span class="goods-tabs__comment-link">Reply</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="goods-tabs__comment-wrapper">
+                  <div class="goods-tabs__comment-img">
+                    <img src="images/goods/authors/author-2.png" alt="" />
+                  </div>
+                  <div class="goods-tabs__comment-box">
+                    <div class="goods-tabs__comment-info">
+                      <div class="goods-tabs__comment-author">
+                        <a class="goods-tabs__comment-name" href="#"
+                          >Emma Thompson
+                        </a>
+                        <span class="goods-tabs__comment-date">7 days ago</span>
+                      </div>
+                      <div class="goods-tabs__comment-rating rating-box">
+                        <div class="rating rating--set">
+                          <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                              <input
+                                class="rating__item"
+                                type="radio"
+                                value="1"
+                                name="rating" />
+                              <input
+                                class="rating__item"
+                                type="radio"
+                                value="2"
+                                name="rating" />
+                              <input
+                                class="rating__item"
+                                type="radio"
+                                value="3"
+                                name="rating" />
+                              <input
+                                class="rating__item"
+                                type="radio"
+                                value="4"
+                                name="rating" />
+                              <input
+                                class="rating__item"
+                                type="radio"
+                                value="5"
+                                name="rating" />
+                            </div>
+                          </div>
+                          <div class="rating__value">3.7</div>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="goods-tabs__comment-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Qus ipsum speissei ultrices gravida. Risus commodo
+                      viverra maeenas accumsan lacus vel facilisis.
+                    </p>
+                    <a class="goods-tabs__comment-reply" href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="15"
+                        height="14"
+                        viewBox="0 0 15 14">
+                        <path
+                          fill="#8d8d8d"
+                          d="M5.835 3.67V.202L0 6.269l5.834 6.067V8.782c4.167 0 7.084 1.387 9.167 4.42-.833-4.333-3.334-8.666-9.167-9.533z" />
+                      </svg>
+                      <span class="goods-tabs__comment-link">Reply</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="goods-tabs__comment-wrapper">
+                  <div class="goods-tabs__comment-img">
+                    <img src="images/goods/authors/author-3.png" alt="" />
+                  </div>
+                  <div class="goods-tabs__comment-box">
+                    <div class="goods-tabs__comment-info">
+                      <div class="goods-tabs__comment-author">
+                        <a class="goods-tabs__comment-name" href="#"
+                          >Olivia Davis
+                        </a>
+                        <span class="goods-tabs__comment-date">11 day ago</span>
+                      </div>
+                      <div class="goods-tabs__comment-rating rating-box">
+                        <div class="rating rating--set">
+                          <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                              <input
+                                class="rating__item"
+                                type="radio"
+                                value="1"
+                                name="rating" />
+                              <input
+                                class="rating__item"
+                                type="radio"
+                                value="2"
+                                name="rating" />
+                              <input
+                                class="rating__item"
+                                type="radio"
+                                value="3"
+                                name="rating" />
+                              <input
+                                class="rating__item"
+                                type="radio"
+                                value="4"
+                                name="rating" />
+                              <input
+                                class="rating__item"
+                                type="radio"
+                                value="5"
+                                name="rating" />
+                            </div>
+                          </div>
+                          <div class="rating__value">3.7</div>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="goods-tabs__comment-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Qus ipsum speissei ultrices gravida. Risus commodo
+                      viverra maeenas accumsan lacus vel facilisis.
+                    </p>
+                    <a class="goods-tabs__comment-reply" href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="15"
+                        height="14"
+                        viewBox="0 0 15 14">
+                        <path
+                          fill="#8d8d8d"
+                          d="M5.835 3.67V.202L0 6.269l5.834 6.067V8.782c4.167 0 7.084 1.387 9.167 4.42-.833-4.333-3.334-8.666-9.167-9.533z" />
+                      </svg>
+                      <span class="goods-tabs__comment-link">Reply</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="goods-tabs__review">
+                  <h5 class="goods-tabs__review-title">Add your review</h5>
+                  <form class="goods-tabs__review-form" action="#">
+                    <div class="goods-tabs__review-info">
+                      <input
+                        class="goods-tabs__review-name goods-tabs__review-input"
+                        type="text"
+                        placeholder="Your name" />
+                      <input
+                        class="goods-tabs__review-email goods-tabs__review-input"
+                        type="email"
+                        placeholder="E-mail address" />
+                    </div>
+                    <textarea
+                      class="goods-tabs__review-text"
+                      type="text"
+                      placeholder="Your text here"></textarea>
+                    <button class="goods-tabs__review-btn" type="submit">
+                      Leave Review
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="related-products">
+            <h2 class="related-products__title title">Related Products</h2>
+            <div class="related-products__cards">
+              <div class="related-products__card">
+                <a class="related-products__card-link" href="#">
+                  <img
+                    class="related-products__card-img"
+                    src="images/related/1.jpg"
+                    alt="#" />
+                  <div class="related-products__card-wrapper">
+                    <div class="related-products__card-rating rating-box">
+                      <div class="rating rating--set">
+                        <div class="rating__body">
+                          <div class="rating__active"></div>
+                          <div class="rating__items">
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              value="1"
+                              name="rating" />
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              value="2"
+                              name="rating" />
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              value="3"
+                              name="rating" />
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              value="4"
+                              name="rating" />
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              value="5"
+                              name="rating" />
+                          </div>
+                        </div>
+                        <div class="rating__value">3.7</div>
+                      </div>
+                    </div>
+                    <h4 class="related-products__card-title">
+                      Baby Girls Dress Designs
+                    </h4>
+                    <div class="related-products__card-prices">
+                      <span
+                        class="related-products__card-price related-products__price-old"
+                        >$99.99</span
+                      >
+                      <span
+                        class="related-products__card-price related-products__price-new"
+                        >$49.99</span
+                      >
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="related-products__card">
+                <a class="related-products__card-link" href="#">
+                  <img
+                    class="related-products__card-img"
+                    src="images/related/2.jpg"
+                    alt="#" />
+                  <div class="related-products__card-wrapper">
+                    <div class="related-products__card-rating rating-box">
+                      <div class="rating rating--set">
+                        <div class="rating__body">
+                          <div class="rating__active"></div>
+                          <div class="rating__items">
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              value="1"
+                              name="rating" />
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              value="2"
+                              name="rating" />
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              value="3"
+                              name="rating" />
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              value="4"
+                              name="rating" />
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              value="5"
+                              name="rating" />
+                          </div>
+                        </div>
+                        <div class="rating__value">3.7</div>
+                      </div>
+                    </div>
+                    <h4 class="related-products__card-title">
+                      Baby Girls Dress Designs
+                    </h4>
+                    <div class="related-products__card-prices">
+                      <span
+                        class="related-products__card-price related-products__price-old"
+                        >$168.99</span
+                      >
+                      <span
+                        class="related-products__card-price related-products__price-new"
+                        >$88.99</span
+                      >
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="related-products__card">
+                <a class="related-products__card-link" href="#">
+                  <img
+                    class="related-products__card-img"
+                    src="images/related/3.jpg"
+                    alt="#" />
+                  <div class="related-products__card-wrapper">
+                    <div class="related-products__card-rating rating-box">
+                      <div class="rating rating--set">
+                        <div class="rating__body">
+                          <div class="rating__active"></div>
+                          <div class="rating__items">
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              value="1"
+                              name="rating" />
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              value="2"
+                              name="rating" />
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              value="3"
+                              name="rating" />
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              value="4"
+                              name="rating" />
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              value="5"
+                              name="rating" />
+                          </div>
+                        </div>
+                        <div class="rating__value">3.7</div>
+                      </div>
+                    </div>
+                    <h4 class="related-products__card-title">
+                      Baby Girls Dress Designs
+                    </h4>
+                    <div class="related-products__card-prices">
+                      <span
+                        class="related-products__card-price related-products__price-old"
+                        >$199.99</span
+                      >
+                      <span
+                        class="related-products__card-price related-products__price-new"
+                        >$99.99</span
+                      >
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="related-products__card">
+                <a class="related-products__card-link" href="#">
+                  <img
+                    class="related-products__card-img"
+                    src="images/related/4.jpg"
+                    alt="#" />
+                  <div class="related-products__card-wrapper">
+                    <div class="related-products__card-rating rating-box">
+                      <div class="rating rating--set">
+                        <div class="rating__body">
+                          <div class="rating__active"></div>
+                          <div class="rating__items">
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              value="1"
+                              name="rating" />
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              value="2"
+                              name="rating" />
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              value="3"
+                              name="rating" />
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              value="4"
+                              name="rating" />
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              value="5"
+                              name="rating" />
+                          </div>
+                        </div>
+                        <div class="rating__value">3.7</div>
+                      </div>
+                    </div>
+                    <h4 class="related-products__card-title">
+                      Baby Girls Dress Designs
+                    </h4>
+                    <div class="related-products__card-prices">
+                      <span
+                        class="related-products__card-price related-products__price-old"
+                        >$137.99</span
+                      >
+                      <span
+                        class="related-products__card-price related-products__price-new"
+                        >$69.99</span
+                      >
+                    </div>
+                  </div></a
+                >
               </div>
             </div>
           </div>

@@ -1,6 +1,7 @@
 import fileInclude from 'gulp-file-include'
 import webpHtmlNosvg from 'gulp-webp-html-nosvg'
 import versionNumber from 'gulp-version-number'
+import webpHtml from 'gulp-webp-html-nosvg'
 
 export const html = () => {
   return app.gulp
@@ -8,6 +9,7 @@ export const html = () => {
 
     .pipe(fileInclude())
     .pipe(app.plugins.replace(/@img\//g, 'images/'))
+    .pipe(app.plugins.if(app.isBuild, webpHtml()))
     .pipe(app.plugins.if(app.isBuild, webpHtmlNosvg()))
     .pipe(
       app.plugins.if(

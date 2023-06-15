@@ -34,3 +34,5 @@ const thumbMiniSwiper = new Swiper('.goods__large-swiper', {
     swiper: thumbLargeSwiper,
   },
 })
+
+export { homeSwiper, thumbLargeSwiper, thumbMiniSwiper }

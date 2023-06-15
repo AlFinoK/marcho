@@ -66,4 +66,4 @@ function initRatings() {
   }
 }
 
-export { ratings }
+export { initRatings }
