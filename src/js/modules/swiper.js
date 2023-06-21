@@ -1,4 +1,5 @@
 import Swiper from 'swiper/bundle'
+import 'swiper/css/bundle'
 
 const homeSwiper = new Swiper('.top-swiper__swiper', {
   pagination: {
@@ -7,10 +8,6 @@ const homeSwiper = new Swiper('.top-swiper__swiper', {
   },
   autoplay: {
     delay: 3000,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
   },
 })
 
@@ -25,14 +22,17 @@ const thumbMiniSwiper = new Swiper('.goods__large-swiper', {
   slidesPerView: 1,
   allowTouchMove: false,
   effect: 'creative',
-  navigation: {
-    nextEl: '.goods__large-next',
-    prevEl: '.goods__large-prev',
-  },
   loop: true,
   thumbs: {
     swiper: thumbLargeSwiper,
   },
 })
 
-export { homeSwiper, thumbLargeSwiper, thumbMiniSwiper }
+const blogItemSwiper = new Swiper('.blog-standard__item-swiper', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+})
+
+export { homeSwiper, thumbLargeSwiper, thumbMiniSwiper, blogItemSwiper }

@@ -1,4 +1,5 @@
-import noUiSlider from 'nouislider'
+import * as noUiSlider from 'nouislider'
+import 'nouislider/dist/nouislider.css'
 
 const rangeSlider = () => {
   const slider = document.querySelector('.price-filter__slider')
