@@ -1,0 +1,38 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  @extend %quick-500;
+  line-height: 26px;
+  color: $def;
+  & .lock {
+    overflow: hidden;
+  }
+}
+
+main {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+.container-big {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 140px 15px;
+}
+
+.title {
+  color: $title;
+  @extend %roboto-700;
+  text-align: center;
+  text-transform: uppercase;
+}

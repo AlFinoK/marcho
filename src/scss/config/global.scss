@@ -1,0 +1,262 @@
+@use 'sass:math';
+
+@import 'vars';
+
+body {
+  display: flex;
+  flex-direction: column;
+  @extend %quick-500;
+  line-height: 26px;
+  color: $def;
+  & .lock {
+    overflow: hidden;
+  }
+}
+
+main {
+  flex-grow: 1;
+}
+
+.header-404page {
+  background-color: #f6f6f6;
+}
+
+.lock {
+  overflow: hidden;
+}
+
+.lock-padding {
+  padding-right: 15px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+.title {
+  color: $title;
+  font-size: rem(48);
+  @extend %roboto-700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container-big {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0px;
+  &__steps {
+    padding: 0 40px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 5px;
+      height: 10px;
+      top: 8px;
+    }
+  }
+  &__prev {
+    &::before {
+      background-image: url('@img/angle-prev.svg');
+      left: 16%;
+    }
+  }
+  &__next {
+    &::before {
+      background-image: url('@img/angle-next.svg');
+      right: 16%;
+    }
+  }
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    padding: 0 10px;
+    &:hover {
+      color: $hover;
+    }
+  }
+  &__item--active {
+    color: $hover;
+  }
+}
+
+.partners {
+  padding: 120px 0;
+  &__logo {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+ 
+.rating-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  font-size: rem(23);
+  line-height: 0.75;
+  &__body {
+    position: relative;
+    &::before {
+      content: '★★★★★';
+      display: block;
+    }
+  }
+  &__active {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    &::before {
+      content: '★★★★★';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      color: #ffc35b;
+    }
+  }
+  &__items {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  &__item {
+    flex: 0 0 20%;
+    height: 100%;
+    opacity: 0;
+  }
+  &__value {
+    display: none;
+    font-size: 50%;
+    line-height: 1;
+    padding-left: 10px;
+  }
+}
+
+.top {
+  // margin-bottom: 120px;
+  &__inner {
+    background-image: url('@img/breadcrumbs-bg.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    padding-top: 100px;
+  }
+  &__title {
+    color: #15181d;
+    font-size: rem(48);
+    @extend %roboto-400;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+}
+
+.bg {
+  background-image: url('@img/error-404.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 500px;
+  height: 300px;
+}
+
+.breadcrumbs {
+  &__list {
+    text-align: center;
+  }
+  &__item {
+    display: inline-block;
+    position: relative;
+    margin-right: 40px;
+    transition: all 0.3s;
+    &::before {
+      content: '';
+      background-image: url('@img/double-right.svg');
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 9px;
+      height: 10px;
+      left: -26px;
+      top: 9px;
+    }
+    &:first-child {
+      margin-left: 60px;
+      &::before {
+        content: '';
+        background-image: url('@img/house.svg');
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        left: -20px;
+        top: 4px;
+      }
+      &:hover {
+        color: $hover;
+      }
+    }
+    &:last-child {
+      color: $hover;
+    }
+  }
+}
+
+.noUi-base {
+  height: 10px;
+
+  .noUi-connects {
+    background-color: rgb(216, 216, 216);
+    border: none;
+    border-radius: 0px;
+    .noUi-connect {
+      height: 10px;
+      background: $hover;
+    }
+  }
+  .noUi-handle:before,
+  .noUi-handle:after {
+    display: none;
+  }
+  .noUi-handle {
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+    margin-top: -4px;
+    box-shadow: 0px 0px 10px 3px rgb(207 207 207 / 50%);
+  }
+}
+
+.price-filter__form {
+  .noUi-horizontal {
+    height: 5px;
+    border: none;
+    border-radius: 0px;
+  }
+
+  .noUi-horizontal .noUi-handle {
+    width: 25px;
+    height: 25px;
+  }
+}

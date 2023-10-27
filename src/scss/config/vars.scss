@@ -1,0 +1,64 @@
+@use 'sass:math';
+
+$hover: #fe3e57;
+$title: #29282d;
+$def: #8d8d8d;
+$bg: #f6f6f6;
+$border: #ececec;
+%roboto-400 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+%roboto-500 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+%roboto-700 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+%quick-400 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+}
+
+%quick-500 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+}
+
+%quick-700 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+}
+
+%btn {
+  letter-spacing: 3.2px;
+  color: white;
+  text-transform: uppercase;
+  @extend %roboto-400;
+  padding: 15px 25px;
+  text-align: center;
+  background-color: $hover;
+  box-shadow: 0 10px 25px rgba(254, 62, 87, 0.3);
+}
+
+@function prc($pxOne, $pxTwo) {
+  $result: math.div($pxOne, $pxTwo) * 100%;
+  @return $result;
+}
+
+// !TO REM:
+@function rem($px) {
+  $result: math.div($px, 16) + rem;
+  @return $result;
+}
+
+// !TO EM:
+@function em($px) {
+  $result: math.div($px, 16) + em;
+  @return $result;
+}
